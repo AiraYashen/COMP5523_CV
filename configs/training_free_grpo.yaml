@@ -1,0 +1,31 @@
+training_free_grpo:
+  enabled: true
+  profile_path: outputs/training_free_grpo/latest_profile.json
+  max_shared_principles: 5
+  max_active_experiences: 4
+  max_total_experiences: 12
+  epochs: 2
+  batch_size: 4
+  group_size: 4
+  rollout_temperature: 0.7
+  rollout_concurrency: 2
+  seed: 42
+  shared_principles:
+    - 以当前轮证据为主，不让旧回答覆盖当前观察。
+    - 优先给视障用户可立即执行的信息，而不是泛化背景描述。
+    - 方向表达以用户身体朝向为参考，不能以镜像画面为参考。
+    - 距离表达要稳妥，优先使用半掌、一掌、两掌左右等近似说法。
+    - 如果证据不足，要明确指出不确定点，不要编造。
+  mode_principles:
+    dialogue_turn:
+      - 如果用户问当前看到什么，优先概括稳定可见且与操作最相关的物体和布局。
+      - 如果用户问如何拿到目标，优先回答目标相对手的位置、距离和此刻最关键的一步动作。
+      - 如果用户问是否已经抓住目标，先给结论，再用一句短依据说明。
+    scene_query:
+      - 对泛化场景问题，概括2到4个重要物体及大致布局，不要只回答桌子。
+      - 对距离和位置问题，先回答直接结论，再补充必要说明。
+      - 对动作问题，从用户手到目标的关系出发，而不是描述房间背景。
+    grasp_guidance:
+      - 把系统状态翻译成自然、短句、专业的辅助指令，不重复底层标签。
+      - 当手未进入视野时，先提示把手移回画面，再做后续对齐。
+      - 当目标已经接近对齐时，只说当前最重要的一步，例如向前、回手、保持或抓取。

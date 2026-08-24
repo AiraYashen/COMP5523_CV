@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{cai2025tfgrpo}
+Y.~Cai, S.~Cai, Y.~Shi, Z.~Xu, L.~Chen, Y.~Qin, X.~Tan, G.~Li, Z.~Li, H.~Lin,
+  Y.~Mao, K.~Li, and X.~Sun, ``Training-free group relative policy
+  optimization,'' {\em arXiv preprint arXiv:2510.08191}, 2025.
+
+\bibitem{xie2023hmjnd}
+W.~Xie, S.~Wang, S.~Tian, L.~Huang, Y.~Liu, and M.~Wang, ``Just noticeable
+  visual redundancy forecasting: A deep multimodal-driven approach,'' in {\em
+  AAAI Conference on Artificial Intelligence}, 2023.
+
+\bibitem{liu2023groundingdino}
+S.~Liu, Z.~Zeng, T.~Ren, F.~Li, H.~Zhang, J.~Yang, C.~Li, J.~Yang, H.~Su,
+  J.~Zhu, {\em et~al.}, ``Grounding dino: Marrying dino with grounded
+  pre-training for open-set object detection,'' in {\em European Conference on
+  Computer Vision}, 2024.
+
+\bibitem{lugaresi2019mediapipe}
+C.~Lugaresi, J.~Tang, H.~Nash, C.~McClanahan, E.~Uboweja, M.~Hays, F.~Zhang,
+  C.-H. Chang, M.~Yong, J.~Lee, {\em et~al.}, ``Mediapipe: A framework for
+  building perception pipelines,'' in {\em CVPR Workshops}, 2019.
+
+\bibitem{yang2024depthanythingv2}
+L.~Yang, B.~Kang, Z.~Huang, X.~Xu, J.~Feng, and H.~Zhao, ``Depth anything v2,''
+  {\em arXiv preprint arXiv:2406.09414}, 2024.
+
+\bibitem{radford2023whisper}
+A.~Radford, J.~W. Kim, T.~Xu, G.~Brockman, C.~McLeavey, and I.~Sutskever,
+  ``Robust speech recognition via large-scale weak supervision,'' {\em
+  International Conference on Machine Learning}, 2023.
+
+\end{thebibliography}

@@ -1,0 +1,59 @@
+object_map:
+  coke:
+    keywords:
+      - coke
+      - cola
+      - 可乐
+    prompts:
+      - red soda can
+      - coke can
+      - cola can
+  milk_box:
+    keywords:
+      - milk
+      - carton
+      - 牛奶
+      - 盒装饮料
+    prompts:
+      - milk carton
+      - drink carton
+  green_bottle:
+    keywords:
+      - bottle
+      - green bottle
+      - 瓶子
+      - 绿色瓶子
+    prompts:
+      - green bottle
+      - plastic bottle
+  tissue_box:
+    keywords:
+      - tissue
+      - tissue box
+      - tissue pack
+      - paper towel
+      - 纸巾
+      - 抽纸
+      - 纸巾盒
+    prompts:
+      - tissue box
+      - tissue pack
+  mouse:
+    keywords:
+      - mouse
+      - computer mouse
+      - 鼠标
+    prompts:
+      - computer mouse
+      - mouse
+  water_bottle:
+    keywords:
+      - water bottle
+      - plastic bottle
+      - 水瓶
+      - 矿泉水
+      - 矿泉水瓶
+      - 饮料瓶
+    prompts:
+      - water bottle
+      - plastic bottle

@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+.DS_Store
+.venv/
+venv/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.log
+models/
+outputs/
+configs/local.secrets.yaml

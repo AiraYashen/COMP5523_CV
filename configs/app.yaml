@@ -1,0 +1,62 @@
+app:
+  device_preference: cpu
+  asr_device_preference: cpu
+  asr_backend: whisper
+  tts_backend: mac_say
+  asr_language: zh
+  asr_record_seconds: 8
+  asr_min_speech_ms: 250
+  asr_min_silence_ms: 700
+  asr_chunk_ms: 200
+  asr_silence_threshold: 0.015
+  asr_min_confidence: 0.45
+  asr_post_tts_cooldown_ms: 900
+  enable_overlay: true
+  enable_camera_preview: true
+  camera_preview_title: SmartReach-HSM Camera
+  camera_preview_fps: 20
+  save_overlay: false
+  overlay_dir: outputs/overlays
+
+vlm:
+  enabled: true
+  # original GLM settings kept in code; switch back by restoring these values:
+  # backend: glm_api
+  # model_id: glm-4.6v
+  # api_base_url: https://api.z.ai/api/paas/v4/chat/completions
+  backend: responses_api
+  model_id: gpt-5.4
+  api_base_url: https://code.rayinai.com/v1/responses
+  timeout_s: 45
+  thinking_enabled: false
+  max_new_tokens: 256
+  narration_cooldown_ms: 5000
+  speech_priority_window_ms: 1500
+  scene_wait_interval_ms: 1000
+  speak_raw_commands: false
+  guidance_every_frame: true
+  conversation_history_turns: 6
+  log_vlm_inputs: true
+  vlm_input_dir: outputs/vlm_inputs
+  trigger_session_start: true
+  trigger_loss: true
+  trigger_wait_hand: false
+
+perception:
+  detector_backend: grounding_dino
+  scene_detector_threshold: 0.28
+  depth_backend: depth_anything
+  hand_backend: mediapipe
+
+models:
+  grounding_dino_id: models/grounding-dino-tiny
+  depth_anything_id: models/depth-anything-small-hf
+  qwen_id: models/qwen2.5-0.5b-instruct
+  whisper_id: models/whisper-large-v3-turbo
+
+capture:
+  burst_count: 3
+  session_steps: 8
+  camera_id: 0
+  stream_fps: 20
+  mirror_correction: true
